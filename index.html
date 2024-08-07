@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Online</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0px auto;
+            padding: 0px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .header {
+            background-color: #3D5CA3;
+            
+            color: white;
+            padding: 24px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        .header .logo {
+            justify-content: start;
+            text-align: initial;
+            display: flex;
+        }
+
+        .header .logo img {
+            width: 250px;
+        }
+
+        .header .try-button {
+            -webkit-text-size-adjust: none;
+            font-family: arial, 'helvetica neue', helvetica, sans-serif;
+            font-size: 16px;
+            color: #3D5CA3;
+            border-style: solid;
+            border-color: #FFFFFF;
+            border-width: 9px 11px 9px 11px;
+            margin: 20px;
+            display: inline-block;
+            background: #FFFFFF;
+            border-radius: 8px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 18px;
+            width: auto;
+            display: flex padding;
+            text-align: right;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .welcome {
+            font-style: italic;
+            Margin: 0;
+
+            font-family: lora, georgia, 'times new roman', serif;
+            font-weight: bold;
+            color: #333333;
+            font-size: 40px !important;
+            text-align: center;
+            line-height: 120% !important;
+        }
+        
+
+        .welcome h3 {
+            font-size: 40px;
+        }
+
+        .welcome p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .get-started {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .get-started h3 {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-size: 20px;
+        }
+
+        .options-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 40px;
+        }
+
+        .option {
+
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .option img {
+            width: 35%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .option .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .option h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .option p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .option a {
+            text-decoration: none;
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .button-container button {
+            background-color: #d3a4ff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #e9e9e9;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .footer .social-links {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .footer .social-links a {
+            display: inline-block;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #337ab7;
+            font-size: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            Margin: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #F7C052;
+            color: #ffffff;
+           
+        }
+
+
+        .contact-info .info {
+           
+            
+        }
+
+        .contact-info .info p {
+            margin: 0;
+            line-height: 14px;
+            
+        }
+
+        .contact-info .info i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .contact-info .info a {
+            text-decoration: none;
+            color: #337ab7;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .options-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_66498ea076b5d00c6f9553055acdb37a/images/12051527590691841.png"
+                    alt="Education Online Logo">
+            </div>
+
+            <button class="try-button">Try free class</button>
+        </div>
+
+        <div class="welcome">
+            <h3>Welcome</h3>
+            <p>We're happy to have you with us.</p>
+            <p>We teach classes in everything from business to medicine. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+
+        <div class="get-started">
+            <h3>Here's how to get started:</h3>
+        </div>
+
+        <div class="options-container">
+            <div class="option">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_172236130180b7a4d5e1d9987369ca61/images/40281527675753663.png"
+                    alt="">
+                <h4>Fill out a profile</h4>
+                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                    consequatur.</p>
+                <a href="#"><u>Read more >></u>
+
+                </a>
+            </div>
+            <div class="option">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_172236130180b7a4d5e1d9987369ca61/images/53701527675683912.png"
+                    alt="">
+                <h4>Use planning tool</h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+                <a href="#"><u>Read more >></u></a>
+            </div>
+            <div class="option">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_172236130180b7a4d5e1d9987369ca61/images/93981527675754800.png"
+                    alt="">
+                <h4>Change settings</h4>
+                <p>Unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#"><u>Read more >></u></a>
+            </div>
+            <div class="option">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_172236130180b7a4d5e1d9987369ca61/images/33081527675753787.png"
+                    alt="">
+
+                <h4>Invite friends</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna.</p>
+                <a href="#"><u>Read more >></u></a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button>Let's get started >>></button>
+        </div>
+        <div class="contact-info">
+            <div class="info">
+                
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_66498ea076b5d00c6f9553055acdb37a/images/39911527588288171.png" alt="">
+                <p>1513 Garfield Park Ave,</p>
+                <p>Lebanon, OH 45036</p>
+            </div>
+            <div class="info">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_66498ea076b5d00c6f9553055acdb37a/images/35681527588356492.png" alt="">
+                <p><a href="mailto:your@mail.com">your@mail.com</a></p>
+            </div>
+            <div class="info">
+                <img src="https://tlr.stripocdn.email/content/guids/CABINET_66498ea076b5d00c6f9553055acdb37a/images/50681527588357616.png" alt="">
+                <p>123456789</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+
+
+
+            <p>Contact us: 123456789 | your@mail.com</p>
+            <p>This daily newsletter was sent to info@edu.com from company name because you subscribed. If you would not
+                like to receive this email unsubscribe here.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
